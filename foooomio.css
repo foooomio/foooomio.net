@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin: 30px;
+  text-align: center;
+  font-size: 36px;
+  font-family: Monaco, Consolas, monospace;
+}
+
+p {
+  text-align: center;
+  line-height: 2em;
+}
+
+#console {
+  color: #f4f4f4;
+  background-color: black;
+  font-size: 16px;
+  font-family: Monaco, Consolas, monospace;
+  margin: 20px auto;
+  padding: 30px;
+  width: 800px;
+  height: 500px;
+  cursor: text;
+  overflow: scroll;
+}
+
+#console-scroll {
+  margin-bottom: 20px;
+  width: 800px;
+}
+
+#prompt {
+  float: left;
+}
+
+#command-wrap {
+  position: relative;
+  float: right;
+}
+
+#command-wrap textarea,
+#command-wrap p {
+  width: 100%;
+}
+
+#command-wrap p {
+  position: absolute;
+  top: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  visibility: hidden;
+}
+
+#command-wrap textarea {
+  color: #f4f4f4;
+  background-color: black;
+  font-size: 16px;
+  font-family: Monaco, Consolas, monospace;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+}
+
+#output a {
+  color: #87cefa;
+  text-decoration: none;
+}
+
+#output a:hover {
+  text-decoration: underline;
+}
+
+#output .message {
+  margin: 10px 0;
+}
+
+#output .message .message {
+  margin: 5px 0;
+}
+
+#output .return {
+  font-style: italic;
+}
+
+#output .error {
+  color: red;
+}
+
+#output .return.error {
+  font-style: normal;
+}
+
+/* Array */
+#output .array .message {
+  display: inline-block;
+}
+
+#output .array .message + .message:before {
+  content: ", ";
+}
+
+/* Object */
+#output .object .message {
+  text-indent: 1em;
+}
+#output .object .message:after {
+  content: ": ..."
+}

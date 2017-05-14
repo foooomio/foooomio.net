@@ -1,0 +1,5 @@
+<script>
+var s = location.hash.slice(1);
+location.href = 'feed://' + decodeURIComponent(s);
+setTimeout(window.close, 1000);
+</script>
