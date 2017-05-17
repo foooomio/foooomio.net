@@ -44,7 +44,7 @@ var PS1, hist = [],
 var foooomio = {
   aboutme: 'https://about.me/foooomio',
   blog: 'http://foooomio.hatenablog.com/',
-  booklog: 'http://booklog.jp/users/foooomio',
+  education: 'Bachelor of Economics in Shiga University',
   email: email(),
   flickr: 'https://www.flickr.com/photos/foooomio/',
   github: 'https://github.com/foooomio',
@@ -55,7 +55,7 @@ var foooomio = {
   location: 'Tokyo, Japan',
   tumblr: 'http://foooomio.tumblr.com/',
   twitter: 'https://twitter.com/foooomio',
-  univ: 'Shiga University'
+  qiita: 'http://qiita.com/foooomio/',
 };
 
 function email() {
