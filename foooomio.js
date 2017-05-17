@@ -2,7 +2,7 @@
  * foooomio.js
  * 
  * author:  foooomio
- * website: http://foooomio.net/
+ * website: https://foooomio.net/
  * license: MIT License
  * require: jQuery v2.1.4
  */
@@ -42,7 +42,7 @@ var PS1, hist = [],
     message_line = $('<div>', {class: 'message'});
 
 var foooomio = {
-  aboutme: 'http://about.me/foooomio',
+  aboutme: 'https://about.me/foooomio',
   blog: 'http://foooomio.hatenablog.com/',
   booklog: 'http://booklog.jp/users/foooomio',
   email: email(),
