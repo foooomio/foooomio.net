@@ -1,6 +1,6 @@
 /**
  * foooomio.js
- * 
+ *
  * author:  foooomio
  * website: https://foooomio.net/
  * license: MIT License
@@ -44,7 +44,7 @@ var PS1, hist = [],
 var foooomio = {
   aboutme: 'https://about.me/foooomio',
   blog: 'http://foooomio.hatenablog.com/',
-  education: 'Bachelor of Economics in Shiga University',
+  education: 'a Bachelor of Economics in Shiga University',
   email: email(),
   flickr: 'https://www.flickr.com/photos/foooomio/',
   github: 'https://github.com/foooomio',
@@ -56,6 +56,7 @@ var foooomio = {
   tumblr: 'http://foooomio.tumblr.com/',
   twitter: 'https://twitter.com/foooomio',
   qiita: 'http://qiita.com/foooomio/',
+  visited: 'http://uub.jp/kkn/km.cgi?MAP=04144423323454444324444445443440342444041030440&CAT=%90%B6%8AU%8Co%8C%A7%92l',
 };
 
 function email() {
