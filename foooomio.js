@@ -52,10 +52,10 @@ var foooomio = {
   job: 'Web Engineer',
   jsdoit: 'http://jsdo.it/foooomio',
   lang: ['Japanese', 'English', 'JavaScript', 'Ruby', 'PHP'],
-  location: 'Tokyo, Japan',
+  location: 'Kyoto, Japan',
   tumblr: 'http://foooomio.tumblr.com/',
   twitter: 'https://twitter.com/foooomio',
-  qiita: 'http://qiita.com/foooomio/',
+  qiita: 'https://qiita.com/foooomio/',
   visited: 'http://uub.jp/kkn/km.cgi?MAP=04144423333454444324444445443444342444041030440&CAT=%90%B6%8AU%8Co%8C%A7%92l',
 };
 
