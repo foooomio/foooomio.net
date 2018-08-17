@@ -4,14 +4,14 @@
  * author:  foooomio
  * website: https://foooomio.net/
  * license: MIT License
- * require: jQuery v2.1.4
+ * require: jQuery
  */
 
 function license() {
   [
     'The MIT License (MIT)',
     ' ',
-    'Copyright (c) 2013-2015 foooomio',
+    'Copyright (c) 2013-2018 foooomio',
     ' ',
     'Permission is hereby granted, free of charge, to any person obtaining a copy',
     'of this software and associated documentation files (the "Software"), to deal',
