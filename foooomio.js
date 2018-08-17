@@ -37,26 +37,31 @@ function license() {
 var evaluate = eval;
 
 var PS1, hist = [],
-    REG_URL = /(http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?)/g,
+    REG_URL = /(https?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=@]*)?)/g,
     REG_EMAIL = /([\w\d_-]+@[\w\d_-]+\.[\w\d._-]+)/g,
     message_line = $('<div>', {class: 'message'});
 
 var foooomio = {
   aboutme: 'https://about.me/foooomio',
   blog: 'http://foooomio.hatenablog.com/',
-  education: 'a Bachelor of Economics in Shiga University',
+  education: 'Bachelor of Economics in Shiga University',
   email: email(),
   flickr: 'https://www.flickr.com/photos/foooomio/',
   github: 'https://github.com/foooomio',
+  greasyfork: 'https://greasyfork.org/ja/users/122805-foooomio',
   hometown: 'Kyoto, Japan',
-  job: 'Web Engineer',
+  job: 'Web Developer',
   jsdoit: 'http://jsdo.it/foooomio',
   lang: ['Japanese', 'English', 'JavaScript', 'Ruby', 'PHP'],
   location: 'Kyoto, Japan',
-  tumblr: 'http://foooomio.tumblr.com/',
+  mastodon: [
+    'https://mstdn.jp/@foooomio',
+    'https://imastodon.net/@foooomio'
+  ],
+  tumblr: 'https://foooomio.tumblr.com/',
   twitter: 'https://twitter.com/foooomio',
   qiita: 'https://qiita.com/foooomio/',
-  visited: 'https://uub.jp/kkn/km.cgi?MAP=04144423333454444324444445443444342444041034440&CAT=%90%B6%8AU%8Co%8C%A7%92l',
+  visited: 'https://uub.jp/kkn/km_new.cgi?MAP=04144423333454444324444445443444342444041034440&CAT=%E7%94%9F%E6%B6%AF%E7%B5%8C%E7%9C%8C%E5%80%A4',
 };
 
 function email() {
