@@ -11,7 +11,7 @@ function license() {
   [
     'The MIT License (MIT)',
     ' ',
-    'Copyright (c) 2013-2018 foooomio',
+    'Copyright (c) 2013-2019 foooomio',
     ' ',
     'Permission is hereby granted, free of charge, to any person obtaining a copy',
     'of this software and associated documentation files (the "Software"), to deal',
@@ -42,25 +42,27 @@ var PS1, hist = [],
     message_line = $('<div>', {class: 'message'});
 
 var foooomio = {
+  '500px': 'https://500px.com/foooomio',
   aboutme: 'https://about.me/foooomio',
-  blog: 'http://foooomio.hatenablog.com/',
+  blog: 'https://foooomio.hatenablog.com/',
   education: 'Bachelor of Economics in Shiga University',
   email: email(),
-  flickr: 'https://www.flickr.com/photos/foooomio/',
+  flickr: 'https://www.flickr.com/people/foooomio/',
   github: 'https://github.com/foooomio',
   greasyfork: 'https://greasyfork.org/ja/users/122805-foooomio',
   hometown: 'Kyoto, Japan',
   job: 'Web Developer',
-  jsdoit: 'http://jsdo.it/foooomio',
   lang: ['Japanese', 'English', 'JavaScript', 'Ruby', 'PHP'],
   location: 'Kyoto, Japan',
   mastodon: [
     'https://mstdn.jp/@foooomio',
     'https://imastodon.net/@foooomio'
   ],
-  tumblr: 'https://foooomio.tumblr.com/',
-  twitter: 'https://twitter.com/foooomio',
-  qiita: 'https://qiita.com/foooomio/',
+  twitter: [
+    'https://twitter.com/foooomio',
+    'https://twitter.com/fooooooomio'
+  ],
+  qiita: 'https://qiita.com/foooomio',
   visited: 'https://uub.jp/kkn/km_new.cgi?MAP=04144423333454444324444445443444342444041034440&CAT=%E7%94%9F%E6%B6%AF%E7%B5%8C%E7%9C%8C%E5%80%A4',
 };
 
