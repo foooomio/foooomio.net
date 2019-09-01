@@ -16,10 +16,17 @@ $('textarea').addEventListener('input', e => {
 });
 
 $('tweet').addEventListener('click', () => {
-  const url = new URL('https://twitter.com/intent/tweet');
-  url.searchParams.set('url', location.href);
-  url.searchParams.set('text', convert($('textarea').value));
-  location.href = url;
+  const text = $('textarea').value;
+
+  const url = new URL('https://foooomio.net/mmkP_rabbit/');
+  if ($('decodable').checked) {
+    url.searchParams.set('p', Base64.encodeURI(text));
+  }
+
+  const tweet = new URL('https://twitter.com/intent/tweet');
+  tweet.searchParams.set('url', url);
+  tweet.searchParams.set('text', convert(text));
+  location.href = tweet;
 });
 
 new ClipboardJS('#copy', {
@@ -28,3 +35,11 @@ new ClipboardJS('#copy', {
   e.trigger.textContent = '完了！';
   setTimeout(() => e.trigger.textContent = 'コピー', 300);
 });
+
+const params = new URLSearchParams(location.search);
+if (params.has('p')) {
+  const text = Base64.decode(params.get('p'));
+  $('input').textContent = convert(text);
+  $('output').textContent = text;
+  $('decode').style.display = 'block';
+}
