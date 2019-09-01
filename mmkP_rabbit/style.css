@@ -1,0 +1,25 @@
+body {
+  margin-top: 1.5rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+textarea {
+  height: 20vh;
+}
+
+textarea:focus {
+  border-color: #1da1f2;
+}
+
+button, button[disabled]:hover {
+  background-color: #1da1f2;
+  border: 0.1rem solid #1da1f2;
+}
+
+button.button-outline, button.button-outline[disabled]:hover {
+  background-color: #0000;
+  color: #1da1f2;
+}
