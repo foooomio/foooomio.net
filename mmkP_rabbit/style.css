@@ -11,7 +11,7 @@ h2 {
 }
 
 textarea {
-  height: 20vh;
+  height: 12rem;
 }
 
 textarea:focus {
@@ -28,11 +28,51 @@ button.button-outline, button.button-outline[disabled]:hover {
   color: #1da1f2;
 }
 
-#decode {
+.hidden {
   display: none;
 }
 
 blockquote {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0.3rem;
+  left: -2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+  border-color: #1da1f2;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0.4rem;
+  left: -1.8rem;
+  width: 0.6rem;
+  height: 1.2rem;
+  border: 0.2rem solid #1da1f2;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
 }

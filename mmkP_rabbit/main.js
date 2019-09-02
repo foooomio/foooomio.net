@@ -41,5 +41,5 @@ if (params.has('p')) {
   const text = Base64.decode(params.get('p'));
   $('input').textContent = convert(text);
   $('output').textContent = text;
-  $('decode').style.display = 'block';
+  $('decode').classList.remove('hidden');
 }

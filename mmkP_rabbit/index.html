@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="テキストをほち語✿に変換してツイートできるツールです。">
     <title>ほち語✿変換器</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
@@ -14,6 +15,7 @@
   <body>
     <div class="container">
       <h1>ほち語✿変換器</h1>
+      <label for="textarea">変換テキスト</label>
       <textarea id="textarea" placeholder="いまどうしてる？"></textarea>
       <div class="clearfix">
         <button id="tweet" class="float-right" disabled>ツイート</button>
@@ -25,7 +27,7 @@
           <label class="label-inline" for="decodable">復号可能にする</label>
         </div>
       </div>
-      <div id="decode">
+      <div id="decode" class="hidden">
         <h2>復号結果</h2>
         <blockquote id="input"></blockquote>
         <div>↓↓↓</div>
