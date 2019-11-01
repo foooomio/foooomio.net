@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ふみをは本日何連休目？</title>
+    <style>
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+#tweet {
+  background-color: #1da1f2;
+  padding: 0.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+#holidays {
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+}
+#holidays + div {
+  float: right;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>ふみをは本日</div>
+      <div id="holidays"></div>
+      <div>連休目です｡</div>
+      <div id="tweet">ツイート</div>
+    </main>
+    <script>
+      'use strict';
+      const DAY = 24 * 60 * 60 * 1000;
+      const today = new Date();
+      const from = new Date(2017, 3 - 1, 10);
+      const days = Math.ceil((today - from) / DAY);
+      const $ = document.getElementById.bind(document);
+      $('holidays').textContent = days;
+      $('tweet').addEventListener('click', () => {
+        const url = new URL('https://twitter.com/intent/tweet');
+        url.searchParams.set('url', 'https://foooomio.net/NEET/');
+        url.searchParams.set('text', `ふみをは本日 ${days} 連休目です。`);
+        location.href = url;
+      });
+    </script>
+  </body>
+</html>
