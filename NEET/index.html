@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   width: 100%;
-  margin: 2rem auto;
+  margin-top: 2rem;
 }
 #holidays {
   font-size: 7rem;
@@ -36,7 +36,11 @@ body {
   text-align: center;
 }
 #holidays + div {
-  float: right;
+  text-align: right;
+}
+#calc {
+  text-align: center;
+  margin-top: 1.5rem;
 }
     </style>
   </head>
@@ -45,6 +49,7 @@ body {
       <div>ふみをは本日</div>
       <div id="holidays"></div>
       <div>連休目です｡</div>
+      <div id="calc">（ <span id="years"></span> 年 と <span id="days"></span> 日 ）</div>
       <div id="tweet">ツイート</div>
     </main>
     <script>
@@ -52,13 +57,17 @@ body {
       const DAY = 24 * 60 * 60 * 1000;
       const today = new Date();
       const from = new Date(2017, 3 - 1, 10);
-      const days = Math.ceil((today - from) / DAY);
+      const holidays = Math.ceil((today - from) / DAY);
+      const years = Math.floor(holidays / 365);
+      const days = holidays % 365;
       const $ = document.getElementById.bind(document);
-      $('holidays').textContent = days;
+      $('holidays').textContent = holidays;
+      $('years').textContent = years;
+      $('days').textContent = days;
       $('tweet').addEventListener('click', () => {
         const url = new URL('https://twitter.com/intent/tweet');
         url.searchParams.set('url', 'https://foooomio.net/NEET/');
-        url.searchParams.set('text', `ふみをは本日 ${days} 連休目です。`);
+        url.searchParams.set('text', `ふみをは本日 ${holidays} 連休目（${years} 年 と ${days} 日）です。`);
         location.href = url;
       });
     </script>
