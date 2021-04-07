@@ -1,9 +1,5 @@
-body {
-  font-family: Verdana, Geneva, sans-serif;
-}
-
-main > section {
-  margin: 4.2rem 0;
+html, h1, h2, h3, h4, h5, h6 {
+  font-family: Courier, sans-serif;
 }
 
 h1 {
@@ -11,24 +7,31 @@ h1 {
   margin-bottom: 0.1rem;
 }
 
-section > section, section > div {
-  margin-left: 1.5rem;
+h1 + b {
+  margin-left: 0.3rem;
 }
 
-h4, h5 {
-  margin-bottom: 2rem;
+main > section {
+  margin: 5rem 0;
 }
 
-i::before {
-  width: 15px;
-  text-align: center;
-  font-size: 2rem;
-  margin-right: 1.2rem;
-  margin-left: 0.4rem;
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+i {
+  vertical-align: -3px;
+  margin-right: 1rem;
+}
+
+p {
+  margin: 0 1rem;
 }
 
 #profile > section {
   display: flex;
+  padding-left: 1.5rem;
 }
 
 #profile img {
@@ -37,16 +40,7 @@ i::before {
   border-radius: 50%;
 }
 
-#profile ul {
-  list-style-type: none;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
 #identifications ul {
-  list-style-type: none;
   column-count: 2;
-  font-size: 1.8rem;
-  padding: 0;
 }
 
