@@ -5,22 +5,24 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Privacy Policy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css@1.0.0/css/sakura.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css@1.3.1/css/sakura.css">
+    <style>h1 { margin-bottom: 4rem; }</style>
   </head>
   <body>
     <h1>Privacy Policy</h1>
     <p>My browser extensions do not collect any personal user data.</p>
     <p>If you have any questions, please feel free to contact me.</p>
     <ul>
-      <li>Email: <span id="email"></span></li>
+      <li>Email: <a id="email"></a></li>
       <li>Twitter: <a href="https://twitter.com/foooomio">@foooomio</a></li>
     </ul>
     <script>
-      document.getElementById('email').textContent = [
-        [15, 24, 24, 24, 24, 22, 18, 24].map(n => n.toString(36)).join(''),
-        ['gmail', 'com'].join('.')
-      ].join('@');
+      'use strict';
+      const address = atob('Zm9vb29taW9AZ21haWwuY29t');
+      const element = document.getElementById('email');
+      element.textContent = address;
+      element.href = 'mailto:' + address;
     </script>
   </body>
 </html>
