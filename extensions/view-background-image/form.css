@@ -1,0 +1,20 @@
+h1 {
+  margin-bottom: 4rem;
+}
+
+form > div {
+  margin: 3rem 0;
+}
+
+input[type] {
+  width: 100%;
+  border-color: #ccc;
+}
+
+input[type="submit"] {
+  margin: 1rem 0;
+}
+
+.required {
+  color: #982c61;
+}
