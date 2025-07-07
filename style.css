@@ -15,6 +15,10 @@ main > section {
   margin: 5rem 0;
 }
 
+section:has(> h4) {
+  margin-left: 1.5rem;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -43,4 +47,3 @@ p {
 #identifications ul {
   column-count: 2;
 }
-
